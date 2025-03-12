@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('src/assets/5471985.jpg') center/cover no-repeat;
+  background-size: 200% 200%;
+  opacity: 0.2;
+  z-index: -1;
+  animation: moveBackground 15s ease-in-out infinite alternate;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-text {
+  background: linear-gradient(270deg, #b669b6, #5c54cb, #2c79ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s infinite alternate;
+}
+
+.tech-logo {
+  width: 2.5rem;
+  /* 10 * 0.25rem */
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  /* rounded-md */
+  padding: 0.5rem;
+  /* p-2 */
+  background-color: rgba(245, 245, 245, 0.1);
+  /* bg-neutral-100 with 10% opacity */
+  backdrop-filter: blur(16px);
+  /* backdrop-blur-lg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.arrow-btn {
+  width: 40px;
+  /* Equivalent to w-10 */
+  height: 40px;
+  /* Equivalent to h-10 */
+  padding: 12px;
+  /* Equivalent to p-3 */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+  /* Equivalent to rounded-full */
+  background: linear-gradient(135deg, #5f5f5f, #000000);
+  /* Assuming 'arrow-gradient' is a blue gradient */
+}
+
+.arrow-btn:active {
+  transform: scale(0.95);
+  /* Equivalent to active:scale-95 */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar in Chrome, Safari */
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+}
+
+.c-space {
+  padding-left: 1.25rem
+    /* 20px */
+  ;
+  padding-right: 1.25rem
+}
+
+.head-text {
+  font-size: 1.875rem;
+  /* Default for small screens (text-3xl) */
+  font-weight: 600;
+  /* font-semibold */
+  background: linear-gradient(to right, #9ca3af, #4b5563);
+  /* text-gray_gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 640px) {
+
+  /* sm: breakpoint */
+  .head-text {
+    font-size: 2.25rem;
+    /* text-4xl */
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  /* lg breakpoint in Tailwind (1024px) */
+  .work-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Radar Animation */
+@keyframes radarScan {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Default Bounce Effect */
+/* Default Bounce Effect */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Circular Movement After Click */
+@keyframes circularMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(50px, -50px);
+  }
+
+  50% {
+    transform: translate(100px, 0);
+  }
+
+  75% {
+    transform: translate(50px, 50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Apply bounce effect */
+.animate-bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Apply circular move effect */
+.animate-circular-move {
+  animation: circularMove 2s ease-in-out forwards;
+}
+
+/* Smooth transition properties for image when not animating */
+img {
+  transition: transform 0.5s ease-in-out;
+}
