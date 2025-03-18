@@ -48,17 +48,19 @@ const Hero = () => {
 
 
             <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              src={profilePic}
+              alt='profile pic'
+              className="w-48 h-48 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-135 lg:h-135 rounded-full shadow-lg !opacity-70 border-4 border-none"
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
               whileHover={{ scale: 1.05 }}
+              viewport={{ once: true, amount: 0.5 }}
               whileInView={{
                 y: [0, -10, 0],
                 transition: { repeat: Infinity, duration: 3, ease: "easeInOut" }
               }}
-              src={profilePic}
-              alt='profile pic'
-              className="w-48 h-48 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-135 lg:h-135 rounded-full shadow-lg !opacity-70 border-4 border-none"></motion.img>
+            ></motion.img>
           </div>
         </div>
       </div>
