@@ -1,8 +1,20 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
-import Blog from "/src/assets/blog_18435825.png";
+
+import Blog from '../assets/blogger.png';
+import spotlight1 from '../assets/spotlight1.png'
+import spotlight2 from '../assets/spotlight2.png'
+import spotlight3 from '../assets/spotlight3.png'
+import spotlight4 from '../assets/spotlight4.png'
+import emailPart2 from '../assets/emailPart2.svg'
+
+
+import GC from '../assets/Google_Colaboratory_SVG_Logo.svg'
+
+import scikit from '../assets/scikit-learn.png'
+import reactt from '../assets/react.svg'
+import tailwindd from '../assets/tailwindcss.png'
+import house from '../assets/house.png'
+
+
 
 export const HERO_CONTENT = `I’m a digital explorer, crafting interactive experiences and unraveling data-driven insights with a mix of code, creativity, and curiosity. Whether it's building dynamic web apps, designing intelligent systems, or diving into the depths of machine learning, I thrive on pushing boundaries...`;
 
@@ -72,23 +84,23 @@ export const PROJECTS = [
       '',
     href: 'https://blogs-with-news.vercel.app/',
     texture: '/textures/project/project1.mp4',
-    logo: 'src/assets/blogger.png',
+    logo: Blog,
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '/src/assets/spotlight1.png',
+    spotlight: spotlight1,
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: 'src/assets/react.svg',
+        path: reactt,
       },
       {
         id: 2,
         name: 'TailwindCSS',
-        path: 'src/assets/tailwindcss.png',
+        path: tailwindd,
       },
     ],
   },
@@ -100,23 +112,23 @@ export const PROJECTS = [
       '',
     href: 'https://github.com/x-state7/HandsOnMachineLearning-book/blob/main/House_price.ipynb',
     texture: '/textures/project/project2.mp4',
-    logo: 'src/assets/house.png',
+    logo: house,
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
       boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    spotlight: 'src/assets/spotlight2.png',
+    spotlight: spotlight2,
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: 'src/assets/Google_Colaboratory_SVG_Logo.svg',
+        path: GC,
       },
       {
         id: 2,
         name: 'TailwindCSS',
-        path: 'src/assets/scikit-learn.png',
+        path: scikit,
       },
     ],
   },
@@ -127,7 +139,7 @@ export const PROJECTS = [
       '',
     href: 'https://github.com/x-state7/Spam-Classifier/blob/main/mail.py',
     texture: '/textures/project/project3.mp4',
-    logo: 'src/assets/emailPart2.svg',
+    logo: emailPart2,
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -135,17 +147,17 @@ export const PROJECTS = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    spotlight: 'src/assets/spotlight3.png',
+    spotlight: spotlight3,
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: 'src/assets/Google_Colaboratory_SVG_Logo.svg',
+        path: GC,
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'src/assets/scikit-learn.png',
+        name: tailwindd,
+        path: scikit,
       },
     ],
   },
