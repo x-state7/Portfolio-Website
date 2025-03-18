@@ -160,7 +160,6 @@ body::before {
 
 
 /* Default Bounce Effect */
-/* Default Bounce Effect */
 @keyframes bounce {
 
   0%,
@@ -168,41 +167,15 @@ body::before {
     transform: translateY(0);
   }
 
-  25% {
+  50% {
     transform: translateY(-10px);
   }
-
-  50% {
-    transform: translateY(5px);
-  }
-
-  75% {
-    transform: translateY(-5px);
-  }
 }
 
-/* Circular Movement After Click */
-@keyframes circularMove {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(50px, -50px);
-  }
-
-  50% {
-    transform: translate(100px, 0);
-  }
-
-  75% {
-    transform: translate(50px, 50px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
+.bounce-animation {
+  animation: bounce 5s infinite ease-in-out;
 }
+
 
 /* Apply bounce effect */
 .animate-bounce {
