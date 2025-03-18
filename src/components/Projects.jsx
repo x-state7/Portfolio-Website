@@ -90,9 +90,9 @@ const Projects = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 1 }}
-        className="c-section my-20 ml-33"
+        className="c-section my-20 lg:ml-33 sm:m-0"
       >
-        <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+        <div className="grid lg:grid-cols-2 sm:flex-col grid-cols-1 mt-12 gap-5 w-full">
           {/* Project Details */}
           <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 h-[600px] overflow-auto scrollbar-hide">
             <div className="absolute top-0 right-0">
@@ -142,8 +142,8 @@ const Projects = () => {
           </div>
 
           {/* Mission Control Terminal */}
-          <div className="flex bg-[rgba(54,45,68,0.6)] ml-40 w-80 flex-col items-center lg:items-start">
-            <div className="bg-[rgba(38,38,38,0.6)] mt-3  text-[#d4d4d4] font-mono p-5 rounded-lg border border-gray-700  ml-3 w-74 max-w-xs shadow-lg">
+          <div className="flex bg-[rgba(54,45,68,0.6)] rounded-t-xl sm:ml-11 lg:ml-40 sm:wr-30 lg:w-80 flex-col items-center lg:items-start">
+            <div className="bg-[rgba(38,38,38,0.6)] mt-3  text-[#d4d4d4] font-mono p-5 rounded-lg border border-gray-700 sm:mr-0 lg:ml-3 w-74 max-w-xs shadow-lg">
               <div className="flex space-x-2 mb-2">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -174,14 +174,7 @@ const Projects = () => {
                 Stay tuned for more exciting projects that will launch in the near future. I am working hard to bring innovative solutions to the table.
               </p>
             </div>
-
-
-
           </div>
-
-          {/*  */}
-
-
         </div>
 
       </motion.section>
